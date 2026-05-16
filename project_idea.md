@@ -50,6 +50,19 @@ Problem dostępności dotyczy nie tylko osób z orzeczeniem, ale też osób z ty
 Poszkodowani w wypadkach przy pracy na 1000 pracujących w 2024 r.
 https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5476/4/18/1/wypadki_przy_pracy_2024.pdf
 
+---
+# Projekt ZFI: Aplikacja "_BezBarier_" - Analiza SWOT
+
+## 1. Analiza SWOT
+
+### Analiza SWOT projektu „_temp_”
+
+| | **Pozytywne** (Pomagają osiągnąć cel) | **Negatywne** (Utrudniają osiągnięcie celu) |
+| :--- | :--- | :--- |
+| **Wewnętrzne**<br>(Cechy organizacji / produktu) | **S – Mocne strony (Strengths):**<br>• Innowacyjne podejście do „mikro-barier” (informacje w czasie rzeczywistym).<br>• Podwójny model biznesowy (Darmowe B2C napędza płatne B2G).<br>• Zespół posiadający kompetencje IT (niskie koszty początkowe w modelu Bootstrap).<br>• Aspekt "Tech for Good", ułatwiający budowę zaufania wśród fundacji i użytkowników. | **W – Słabe strony (Weaknesses):**<br>• Brak rozpoznawalności marki na wczesnym etapie.<br>• Silna zależność od efektu skali (aplikacja crowdsourcingowa wymaga masy krytycznej użytkowników do poprawnego działania).<br>• Ograniczony budżet marketingowy.<br>• Długi proces decyzyjny w sektorze B2G (sprzedaż abonamentu urzędom może trwać miesiącami). |
+| **Zewnętrzne**<br>(Otoczenie rynkowe) | **O – Szanse (Opportunities):**<br>• Ogromne możliwości dofinansowań unijnych (np. grant FERS – Dostępność+ do 100 tys. zł).<br>• Starzejące się społeczeństwo i rosnąca liczba osób z niepełnosprawnościami w Polsce.<br>• Rosnąca presja prawna na samorządy w zakresie dostępności przestrzeni publicznej (EAA – Europejski Akt o Dostępności). | **T – Zagrożenia (Threats):**<br>• Giganci technologiczni (Google Maps, Wheelmap) mogą skopiować i wdrożyć funkcję raportowania na żywo.<br>• Ryzyko niechęci władz miast do opłacania subskrypcji w obliczu cięć budżetowych w samorządach.<br>• Potencjalne problemy prawne ze zgłaszaniem „nielegalnie zaparkowanych aut/hulajnóg” (odpowiedzialność za dane). |
+
+---
 # Projekt ZFI: Aplikacja "_BezBarier_" - Kosztorys i Rentowność
 
 ## 1. Kosztorys: Wynagrodzenia zespołu (Model miesięczny)
