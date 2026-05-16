@@ -91,7 +91,7 @@ Zgodnie z wymogami projektu, zaplanowano pozyskanie dofinansowania. Aplikacja wp
 
 "Fundusze Europejskie dla Rozwoju Społecznego na rzecz dostępności" - program skierowany do projektów poprawiających dostępność przestrzeni publicznej dla osób z niepełnosprawnościami.
 
-![alt text](image.png)
+![alt text](fers-inkubator.png)
 
 https://www.funduszeunijne.gov.pl/strony/o-funduszach/fundusze-europejskie-bez-barier/dostepnosc/
 
