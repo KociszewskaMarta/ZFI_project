@@ -6,9 +6,7 @@
   title: [Projekt ZFI: Aplikacja "_BezBarier_"],
   subtitle: [Koncepcja, Analiza Rynku, SWOT, Kosztorys i Strategia],
   authors: (
-    (name: "Autor 1", studentID: "XXXXXX"),
-    (name: "Autor 2", studentID: "XXXXXX"),
-    (name: "Autor 3", studentID: "XXXXXX"),
+    (name: "Marta Kociszewska", studentID: "198143"),
   ),
 
   paper,
@@ -33,19 +31,28 @@ Projekt zakłada podwójny model dotarcia do odbiorców:
 
 Według danych GUS z końca 2024 roku, w Polsce żyje *3,9 mln osób* posiadających ważne orzeczenie o niepełnosprawności (co stanowi 10,5% ogólnej liczby ludności kraju). Liczba ta dobitnie pokazuje skalę wyzwań związanych z dostępnością przestrzeni publicznej. Aplikacja odpowiada na bezpośrednie potrzeby ogromnej grupy docelowej.
 
-Osoby niepełnosprawne prawnie według płci i grup wieku w 2024 r (źródło: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5487/26/7/1/osoby_niepelnosprawne_w_2024_r..pdf)
+#figure(
+  image("gus-osoby-niepelnosprawne.png", width: 100%),
+  caption: [Osoby niepełnosprawne prawnie według płci i grup wieku w 2024 r],
+)
 
 === Starzenie społeczeństwa i rosnąca liczba seniorów
 
 Polska, podobnie jak wiele innych krajów europejskich, doświadcza dynamicznego procesu starzenia się społeczeństwa. Według GUS, liczba osób w wieku 65 lat i więcej przekroczyła już 6 mln, co stanowi ponad 15% populacji. Wraz z wiekiem rośnie prawdopodobieństwo wystąpienia problemów z mobilnością, co sprawia, że dostępność przestrzeni publicznej staje się kluczowym czynnikiem wpływającym na jakość życia seniorów. "_BezBarier_" jest odpowiedzią na te potrzeby, oferując narzędzie, które pomaga seniorom bezpiecznie poruszać się po mieście.
 
-Piramida wieku i płci GUS 2024 (źródło: https://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/6/37/1/ludnosc._stan_i_struktura_vi2024.pdf)
+#figure(
+  image("gus-piramida-wiek-plec.png", width: 100%),
+  caption: [Piramida wieku i płci GUS 2024],
+)
 
 === Wypadkowość a tymczasowe bariery
 
 Problem dostępności dotyczy nie tylko osób z orzeczeniem, ale też osób z tymczasowymi urazami (np. po złamaniach). Według wstępnych danych GUS za 2024 rok, poszkodowanych w wypadkach przy pracy było aż 67 tys. osób. Najwyższe wskaźniki wypadkowości notuje m.in. województwo śląskie i zachodniopomorskie. Dla osoby ze złamaną nogą niedziałająca winda to taka sama bariera jak dla osoby stale poruszającej się na wózku.
 
-Poszkodowani w wypadkach przy pracy na 1000 pracujących w 2024 r. (źródło: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5476/4/18/1/wypadki_przy_pracy_2024.pdf)
+#figure(
+  image("gus-wypadki-pracy.png", width: 100%),
+  caption: [Wypadki przy pracy GUS 2024],
+)
 
 = Istniejące rozwiązania - Analiza konkurencji
 
@@ -146,19 +153,32 @@ Zgodnie z wymogami projektu, zaplanowano pozyskanie dofinansowania. Aplikacja wp
 
 Szczegółowe informacje: https://www.funduszeunijne.gov.pl/strony/o-funduszach/fundusze-europejskie-bez-barier/dostepnosc/ oraz https://www.inkubatorwielkichjutra.pl/
 
+#figure(
+  image("fers-inkubator.png", width: 100%),
+  caption: [Fundusze Europejskie dla Rozwoju Społecznego na rzecz dostępności - Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +],
+)
+
 == Analiza Scenariuszowa i Próg Rentowności (BEP)
 
-W celu zminimalizowania ryzyka biznesowego projektu aplikacji, analizę progu rentowności (Break-Even Point) oparto na dwóch alternatywnych scenariuszach operacyjnych. Model biznesowy w obu przypadkach zakłada sprzedaż subskrypcji panelu analitycznego dla jednostek samorządu terytorialnego w cenie $S = 12 space 000 " zł"$ miesięcznie od miasta, przy koszcie zmiennym wdrożenia i obsługi $K_z = 500 " zł"$ od klienta.
+W celu zminimalizowania ryzyka biznesowego projektu aplikacji, analizę progu rentowności (Break-Even Point) oparto na dwóch alternatywnych scenariuszach operacyjnych. Model biznesowy w obu przypadkach zakłada sprzedaż subskrypcji panelu analitycznego dla jednostek samorządu terytorialnego w cenie $S = 12 000 " zł"$ miesięcznie od miasta, przy koszcie zmiennym wdrożenia i obsługi $K_z = 500 " zł"$ od klienta.
 
 Ilościowy próg rentowności wyliczany jest ze wzoru podstawowego:
-$$BEP' = frac(K_s, S - K_z)$$
+#equation_with_description(
+  [$ B E P = frac(K_s, S - K_z) $ <eq:bep>],
+  [$K_s$ – koszty stałe,],
+  [$S$ – cena sprzedaży,],
+  [$K_z$ – koszty zmienne.]
+)
 
 === Scenariusz A: Rozwój kapitałowy (Z uzyskaniem grantu FERS)
 
 *Opis kosztów:* Zakłada się pozyskanie grantu w wysokości 100 000 zł z programu Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +. Koszty stałe ($K_s$) wynoszą *40 000 zł/miesiąc*, na co składają się rynkowe wynagrodzenia trzech członków zespołu (35 000 zł), infrastruktura serwerowa (1 000 zł) oraz administracja i marketing (4 000 zł).
 
 *Matematyczny próg rentowności:*
-$$BEP_A = frac(40 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 3,47 ⟹ bold("4 miasta")$$
+
+#equation_simple(
+  [$ B E P_A = frac(40 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 3,47$ <eq:bep_a>]
+)
 
 Firma osiąga rentowność operacyjną przy pozyskaniu i utrzymaniu 4 płatnych klientów instytucjonalnych.
 
@@ -171,7 +191,10 @@ Firma osiąga rentowność operacyjną przy pozyskaniu i utrzymaniu 4 płatnych 
 *Opis kosztów:* W przypadku nieuzyskania dofinansowania, projekt przechodzi w tryb maksymalnej oszczędności budżetowej. Założyciele decydują się na odroczenie pobierania wynagrodzeń do momentu osiągnięcia realnych zysków. Koszty stałe ($K_s$) zostają zredukowane do zaledwie *5 000 zł/miesiąc* (1 000 zł serwery oraz 4 000 zł podstawowa księgowość, prawo i narzędzia).
 
 *Matematyczny próg rentowności:*
-$$BEP_B = frac(5 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 0,43 ⟹ bold("1 miasto")$$
+
+#equation_simple(
+  [$ B E P_B = frac(5 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 0,43$ <eq:bep_b>]
+)
 
 Firma osiąga rentowność operacyjną już przy pozyskaniu 1 płatnego klienta instytucjonalnego.
 
@@ -215,6 +238,11 @@ Choć Scenariusz B charakteryzuje się niższym progiem rentowności na papierze
 - *Działania:* Oficjalna premiera w sklepach App Store i Google Play
 - *Cel:* Pełne uruchomienie operacyjne firmy
 
+#figure(
+  image("harmonogram.png", width: 100%),
+  caption: [Harmonogram wdrożenia projektu],
+)
+
 = Strategia Marketingowa
 
 == Marketing-mix: Zasada 4P
@@ -242,3 +270,13 @@ Nasza strategia opiera się na dostosowaniu czterech fundamentów marketingu do 
 
 - Bezpośrednie pobieranie aplikacji ze sklepów Google Play i App Store
 - Sprzedaż bezpośrednia usług analitycznych dla jednostek samorządu terytorialnego
+
+#pagebreak()
+
+= Bibliografia
+
+Osoby niepełnosprawne prawnie według płci i grup wieku w 2024 r (źródło: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5487/26/7/1/osoby_niepelnosprawne_w_2024_r..pdf)
+
+Piramida wieku i płci GUS 2024 (źródło: https://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/6/37/1/ludnosc._stan_i_struktura_vi2024.pdf)
+
+Poszkodowani w wypadkach przy pracy na 1000 pracujących w 2024 r. (źródło: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5476/4/18/1/wypadki_przy_pracy_2024.pdf)
