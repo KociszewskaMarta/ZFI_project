@@ -419,6 +419,17 @@
   )
 }
 
+#let equation_simple(equation) = {
+  figure(
+    // the if is a fix to allow for equation numbering
+    if equation.has("children") and equation.children.any(eq => eq.has("label")) {
+      set math.equation(numbering: eq_numbering)
+      equation
+    } else { equation },
+    numbering: none,
+  )
+}
+
 // EXAMPLE: (label is optional)
 // #equation_with_description(
 //   [$ F_g = m dot g $ <eq:gravitational_force>],
