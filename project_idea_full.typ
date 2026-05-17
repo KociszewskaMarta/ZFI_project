@@ -105,6 +105,43 @@ Jako rozwiązanie z kategorii "Tech for Good", które aktywnie wspiera włączen
 - Ryzyko niechęci władz miast do opłacania subskrypcji w obliczu cięć budżetowych w samorządach
 - Potencjalne problemy prawne ze zgłaszaniem „nielegalnie zaparkowanych aut/hulajnóg" (odpowiedzialność za dane)
 
+= Harmonogram i Wdrożenie
+
+== Etap 1: Analiza rynku i pozyskanie dofinansowania (Tyg. 1-6)
+
+- *Działania:* Finalizacja analizy konkurencji, przygotowanie biznesplanu pod program "Dostępność Plus"
+- *Cel:* Złożenie wniosku o dotację i uzyskanie promesy finansowania
+
+== Etap 2: Projektowanie UI/UX i makiety (Tyg. 7-10)
+
+- *Działania:* Projektowanie interfejsu z uwzględnieniem standardów (wysoki kontrast, obsługa czytników ekranu)
+- *Cel:* Gotowe prototypy ekranów aplikacji
+
+== Etap 3: Rozwój MVP - Minimum Viable Product (Tyg. 11-22)
+
+- *Działania:* Prace programistyczne (Frontend/Backend). Implementacja modułu mapowego i systemu zgłoszeń crowdsourcingowych
+- *Cel:* Funkcjonalna wersja aplikacji gotowa do instalacji
+
+== Etap 4: Testy Beta z użytkownikami (Tyg. 23-26)
+
+- *Działania:* Testy terenowe w Gdańsku i Gdyni we współpracy z lokalnymi fundacjami osób z niepełnosprawnościami
+- *Cel:* Wykrycie błędów i weryfikacja czytelności mapy
+
+== Etap 5 i 6: Marketing i Sprzedaż (Tyg. 25-30)
+
+- *Działania:* Kampania w Social Media (Facebook/Instagram) skierowana do użytkowników (B2C). Równolegle: bezpośrednie spotkania z przedstawicielami Urzędów Miast (B2G)
+- *Cel:* Zbudowanie bazy użytkowników i pozyskanie pierwszego płatnego klienta
+
+== Etap 7: Market Entry (Tydzień 30)
+
+- *Działania:* Oficjalna premiera w sklepach App Store i Google Play
+- *Cel:* Pełne uruchomienie operacyjne firmy
+
+#figure(
+  image("harmonogram.png", width: 100%),
+  caption: [Harmonogram wdrożenia projektu],
+)
+
 = Kosztorys i Rentowność
 
 == Wynagrodzenia zespołu
@@ -158,7 +195,7 @@ Szczegółowe informacje: https://www.funduszeunijne.gov.pl/strony/o-funduszach/
   caption: [Fundusze Europejskie dla Rozwoju Społecznego na rzecz dostępności - Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +],
 )
 
-== Analiza Scenariuszowa i Próg Rentowności (BEP)
+== Analiza Scenariuszowa i Próg Rentowności (Break-Even Point)
 
 W celu zminimalizowania ryzyka biznesowego projektu aplikacji, analizę progu rentowności (Break-Even Point) oparto na dwóch alternatywnych scenariuszach operacyjnych. Model biznesowy w obu przypadkach zakłada sprzedaż subskrypcji panelu analitycznego dla jednostek samorządu terytorialnego w cenie $S = 12 000 " zł"$ miesięcznie od miasta, przy koszcie zmiennym wdrożenia i obsługi $K_z = 500 " zł"$ od klienta.
 
@@ -206,42 +243,16 @@ Firma osiąga rentowność operacyjną już przy pozyskaniu 1 płatnego klienta 
 
 Choć Scenariusz B charakteryzuje się niższym progiem rentowności na papierze, to *Scenariusz A (z grantem FERS) jest wariantem o znacznie niższym realnym ryzyku biznesowym*. Zapewnia on płynność finansową spółki w kluczowej, początkowej fazie rozwoju produktu. Strategią nadrzędną firmy jest aplikowanie o dofinansowanie unijne (Wariant A), natomiast model Bootstrap (Wariant B) stanowi w pełni opracowany plan awaryjny.
 
-= Harmonogram i Wdrożenie
+== Zarządzanie Przepływami Pieniężnymi (Cash Flow) i Strategia "Smart Burn Rate"
 
-== Etap 1: Analiza rynku i pozyskanie dofinansowania (Tyg. 1-6)
+Pozorny paradoks matematyczny projektu polega na tym, że grant z programu FERS wynosi maksymalnie 100 000 zł, podczas gdy pełne rynkowe koszty operacyjne przedsiębiorstwa w fazie wdrożenia wynoszą 40 000 zł miesięcznie, a całkowity czas realizacji to 30 tygodni (ok. 7,5 miesiąca). Przy liniowym, stałym tempie wydatków środki z dotacji skończyłyby się po 2,5 miesiącach. 
 
-- *Działania:* Finalizacja analizy konkurencji, przygotowanie biznesplanu pod program "Dostępność Plus"
-- *Cel:* Złożenie wniosku o dotację i uzyskanie promesy finansowania
+Aby wyeliminować ryzyko utraty płynności finansowej, wdrożono strategię elastycznego zarządzania budżetem operacyjnym (*Smart Burn Rate*):
 
-== Etap 2: Projektowanie UI/UX i makiety (Tyg. 7-10)
+1. *Faza Inicjalna (Tygodnie 1–10 – Szacowany koszt: 5 000 zł/mc):* Etapy analizy rynku, uwarunkowań prawnych oraz projektowania makiet UI/UX realizowane są w realizowane w modelu Lean Startup. Koszty operacyjne ograniczają się do niezbędnej infrastruktury chmurowej, narzędzi projektowych i obsługi prawnej. Praca deweloperska nie jest na tym etapie kontraktowana komercyjnie.
+2. *Faza Intensywnego Rozwoju MVP (Tygodnie 11–22 – Szacowany koszt: 40 000 zł/mc):* W momencie rozpoczęcia zaawansowanych prac programistycznych następuje uruchomienie środków z grantu FERS. Przez okres 12 tygodni (3 miesiące) zespół pracuje w pełnym wymiarze godzin przy rynkowych stawkach wynagrodzeń. Łączny koszt tej kluczowej fazy wynosi $3 times 40 space 000 " zł" = 120 space 000 " zł"$, z czego 100 000 zł pokrywa bezzwrotna dotacja unijna, a pozostała część stanowi minimalny wkład własny założycieli.
+3. *Faza Testów i Przedsprzedaży (Tygodnie 23–30 – Finansowanie Hybrydowe):* Po ukończeniu wersji MVP, w trakcie testów beta w Trójmieście, uruchomiony zostaje program pilotażowy B2G. Przed oficjalną premierą rynkową nawiązywane są pierwsze partnerstwa komercyjne z urzędami miast na zasadzie przedpłaconych subskrypcji wdrożeniowych (Early Access). Przychody z pierwszych umów (12 000 zł/mc od miasta) zaczynają bezpośrednio finansować bieżące utrzymanie systemu i zasilają kapitał obrotowy spółki.
 
-- *Działania:* Projektowanie interfejsu z uwzględnieniem standardów (wysoki kontrast, obsługa czytników ekranu)
-- *Cel:* Gotowe prototypy ekranów aplikacji
-
-== Etap 3: Rozwój MVP - Minimum Viable Product (Tyg. 11-22)
-
-- *Działania:* Prace programistyczne (Frontend/Backend). Implementacja modułu mapowego i systemu zgłoszeń crowdsourcingowych
-- *Cel:* Funkcjonalna wersja aplikacji gotowa do instalacji
-
-== Etap 4: Testy Beta z użytkownikami (Tyg. 23-26)
-
-- *Działania:* Testy terenowe w Gdańsku i Gdyni we współpracy z lokalnymi fundacjami osób z niepełnosprawnościami
-- *Cel:* Wykrycie błędów i weryfikacja czytelności mapy
-
-== Etap 5 i 6: Marketing i Sprzedaż (Tyg. 25-30)
-
-- *Działania:* Kampania w Social Media (Facebook/Instagram) skierowana do użytkowników (B2C). Równolegle: bezpośrednie spotkania z przedstawicielami Urzędów Miast (B2G)
-- *Cel:* Zbudowanie bazy użytkowników i pozyskanie pierwszego płatnego klienta
-
-== Etap 7: Market Entry (Tydzień 30)
-
-- *Działania:* Oficjalna premiera w sklepach App Store i Google Play
-- *Cel:* Pełne uruchomienie operacyjne firmy
-
-#figure(
-  image("harmonogram.png", width: 100%),
-  caption: [Harmonogram wdrożenia projektu],
-)
 
 = Strategia Marketingowa
 
