@@ -54,6 +54,10 @@ Problem dostępności dotyczy nie tylko osób z orzeczeniem, ale też osób z ty
   caption: [Wypadki przy pracy GUS 2024],
 )
 
+Skala wyzwań związanych z nagłymi problemami z mobilnością wykracza poza stałe orzeczenia o niepełnosprawności. Jak wynika z najnowszego raportu Głównego Urzędu Statystycznego "Pomoc doraźna i ratownictwo medyczne", w samym tylko 2025 roku zespoły ratownictwa medycznego udzieliły świadczeń zdrowotnych w miejscu zdarzenia aż 3,3 mln osób. 
+
+Co więcej, z doraźnej pomocy medycznej w szpitalnych oddziałach ratunkowych lub izbach przyjęć skorzystało 6,6 mln pacjentów, z czego blisko 4,9 mln wypisano do domu po udzieleniu doraźnej pomocy medycznej. To właśnie ta wielomilionowa grupa pacjentów, opuszczająca szpitale po urazach, wypadkach czy ze złamaniami, staje się grupą osób „tymczasowo niepełnosprawnych ruchowo”. Dla osoby o kulach lub poruszającej się w tymczasowym gipsie, zepsuta winda czy zablokowany chodnik to bariera nie do pokonania. Aplikacja „BezBarier” stanowi odpowiedź na tę nagłą potrzebę, umożliwiając bezpieczne zaplanowanie trasy powrotu do zdrowia w nieprzystosowanej przestrzeni miejskiej.
+
 = Istniejące rozwiązania - Analiza konkurencji
 
 Rynek nawigacji i map dostępności posiada już ugruntowane rozwiązania. Wśród głównych konkurentów znajdują się:
@@ -355,3 +359,5 @@ Osoby niepełnosprawne prawnie według płci i grup wieku w 2024 r (źródło: h
 Piramida wieku i płci GUS 2024 (źródło: https://stat.gov.pl/files/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/6/37/1/ludnosc._stan_i_struktura_vi2024.pdf)
 
 Poszkodowani w wypadkach przy pracy na 1000 pracujących w 2024 r. (źródło: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5476/4/18/1/wypadki_przy_pracy_2024.pdf)
+
+Raport GUS "Pomoc doraźna i ratownictwo medyczne" (źródło: https://stat.gov.pl/obszary-tematyczne/zdrowie/zdrowie/pomoc-dorazna-i-ratownictwo-medyczne-w-2025-r-,14,10.html)
