@@ -169,8 +169,9 @@ Aby prawidłowo wyliczyć ilościowy i wartościowy próg rentowności, zdefinio
 - *Koszty stałe (Ks):* Wydatki ponoszone co miesiąc niezależnie od liczby klientów
   - Wynagrodzenia zespołu: 35 000 zł
   - Infrastruktura serwerowa i oprogramowanie: 1 000 zł
-  - Administracja, księgowość i podstawowy marketing: 4 000 zł
-  - *Suma Ks:* 40 000 zł / miesiąc
+  - Marketing: 6 700 zł
+  - Administracja i księgowość: 2 300 zł
+  - *Suma Ks:* 45 000 zł / miesiąc
 
 - *Koszty zmienne (Kz):* Koszty rosnące wraz z każdym nowym klientem B2G
   - *Suma Kz:* 500 zł / klienta
@@ -194,65 +195,6 @@ Szczegółowe informacje: https://www.funduszeunijne.gov.pl/strony/o-funduszach/
   image("fers-inkubator.png", width: 100%),
   caption: [Fundusze Europejskie dla Rozwoju Społecznego na rzecz dostępności - Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +],
 )
-
-== Analiza Scenariuszowa i Próg Rentowności (Break-Even Point)
-
-W celu zminimalizowania ryzyka biznesowego projektu aplikacji, analizę progu rentowności (Break-Even Point) oparto na dwóch alternatywnych scenariuszach operacyjnych. Model biznesowy w obu przypadkach zakłada sprzedaż subskrypcji panelu analitycznego dla jednostek samorządu terytorialnego w cenie $S = 12 000 " zł"$ miesięcznie od miasta, przy koszcie zmiennym wdrożenia i obsługi $K_z = 500 " zł"$ od klienta.
-
-Ilościowy próg rentowności wyliczany jest ze wzoru podstawowego:
-#equation_with_description(
-  [$ B E P = frac(K_s, S - K_z) $ <eq:bep>],
-  [$K_s$ – koszty stałe,],
-  [$S$ – cena sprzedaży,],
-  [$K_z$ – koszty zmienne.]
-)
-
-=== Scenariusz A: Rozwój kapitałowy (Z uzyskaniem grantu FERS)
-
-*Opis kosztów:* Zakłada się pozyskanie grantu w wysokości 100 000 zł z programu Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +. Koszty stałe ($K_s$) wynoszą *40 000 zł/miesiąc*, na co składają się rynkowe wynagrodzenia trzech członków zespołu (35 000 zł), infrastruktura serwerowa (1 000 zł) oraz administracja i marketing (4 000 zł).
-
-*Matematyczny próg rentowności:*
-
-#equation_simple(
-  [$ B E P_A = frac(40 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 3,47$ <eq:bep_a>]
-)
-
-Firma osiąga rentowność operacyjną przy pozyskaniu i utrzymaniu 4 płatnych klientów instytucjonalnych.
-
-*Ocena strategiczna:*
-- *Plusy (Szanse):* Pozyskanie zewnętrznego finansowania w kwocie 100 000 zł tworzy bezpieczną poduszkę finansową. Środki te w pełni pokrywają koszty operacyjne w pierwszych miesiącach, gdy przychody ze sprzedaży wynoszą jeszcze 0 zł. Pozwala to zespołowi na bezstresowe przejście przez fazę projektowania UI/UX, rozwój MVP oraz testy beta i dopracowanie aplikacji bez presji natychmiastowej komercjalizacji.
-- *Minusy (Ryzyko):* Wyższy próg rentowności na poziomie operacyjnym - wymaga podpisania umów z 4 miastami, aby przychody zaczęły bilansować ponoszone koszty stałe.
-
-=== Scenariusz B: Samofinansowanie (Bootstrap / Lean Startup)
-
-*Opis kosztów:* W przypadku nieuzyskania dofinansowania, projekt przechodzi w tryb maksymalnej oszczędności budżetowej. Założyciele decydują się na odroczenie pobierania wynagrodzeń do momentu osiągnięcia realnych zysków. Koszty stałe ($K_s$) zostają zredukowane do zaledwie *5 000 zł/miesiąc* (1 000 zł serwery oraz 4 000 zł podstawowa księgowość, prawo i narzędzia).
-
-*Matematyczny próg rentowności:*
-
-#equation_simple(
-  [$ B E P_B = frac(5 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 0,43$ <eq:bep_b>]
-)
-
-Firma osiąga rentowność operacyjną już przy pozyskaniu 1 płatnego klienta instytucjonalnego.
-
-*Ocena strategiczna:*
-- *Plusy (Szanse):* Niezwykle niski próg rentowności. Już pierwszy pozyskany klient B2G w pełni pokrywa miesięczne koszty utrzymania infrastruktury i generuje nadwyżkę finansową.
-- *Minusy (Ryzyko):* Krytycznie wysokie ryzyko personalne i operacyjne. Brak poduszki finansowej oznacza, że jeśli zespół nie pozyska klienta w pierwszych tygodniach, projekt zbankrutuje. Konieczność darmowej pracy założycieli może prowadzić do frustracji i wypalenia zespołu.
-
-=== Wnioski
-
-Choć Scenariusz B charakteryzuje się niższym progiem rentowności na papierze, to *Scenariusz A (z grantem FERS) jest wariantem o znacznie niższym realnym ryzyku biznesowym*. Zapewnia on płynność finansową spółki w kluczowej, początkowej fazie rozwoju produktu. Strategią nadrzędną firmy jest aplikowanie o dofinansowanie unijne (Wariant A), natomiast model Bootstrap (Wariant B) stanowi w pełni opracowany plan awaryjny.
-
-== Zarządzanie Przepływami Pieniężnymi (Cash Flow) i Strategia "Smart Burn Rate"
-
-Pozorny paradoks matematyczny projektu polega na tym, że grant z programu FERS wynosi maksymalnie 100 000 zł, podczas gdy pełne rynkowe koszty operacyjne przedsiębiorstwa w fazie wdrożenia wynoszą 40 000 zł miesięcznie, a całkowity czas realizacji to 30 tygodni (ok. 7,5 miesiąca). Przy liniowym, stałym tempie wydatków środki z dotacji skończyłyby się po 2,5 miesiącach. 
-
-Aby wyeliminować ryzyko utraty płynności finansowej, wdrożono strategię elastycznego zarządzania budżetem operacyjnym (*Smart Burn Rate*):
-
-1. *Faza Inicjalna (Tygodnie 1–10 – Szacowany koszt: 5 000 zł/mc):* Etapy analizy rynku, uwarunkowań prawnych oraz projektowania makiet UI/UX realizowane są w realizowane w modelu Lean Startup. Koszty operacyjne ograniczają się do niezbędnej infrastruktury chmurowej, narzędzi projektowych i obsługi prawnej. Praca deweloperska nie jest na tym etapie kontraktowana komercyjnie.
-2. *Faza Intensywnego Rozwoju MVP (Tygodnie 11–22 – Szacowany koszt: 40 000 zł/mc):* W momencie rozpoczęcia zaawansowanych prac programistycznych następuje uruchomienie środków z grantu FERS. Przez okres 12 tygodni (3 miesiące) zespół pracuje w pełnym wymiarze godzin przy rynkowych stawkach wynagrodzeń. Łączny koszt tej kluczowej fazy wynosi $3 times 40 space 000 " zł" = 120 space 000 " zł"$, z czego 100 000 zł pokrywa bezzwrotna dotacja unijna, a pozostała część stanowi minimalny wkład własny założycieli.
-3. *Faza Testów i Przedsprzedaży (Tygodnie 23–30 – Finansowanie Hybrydowe):* Po ukończeniu wersji MVP, w trakcie testów beta w Trójmieście, uruchomiony zostaje program pilotażowy B2G. Przed oficjalną premierą rynkową nawiązywane są pierwsze partnerstwa komercyjne z urzędami miast na zasadzie przedpłaconych subskrypcji wdrożeniowych (Early Access). Przychody z pierwszych umów (12 000 zł/mc od miasta) zaczynają bezpośrednio finansować bieżące utrzymanie systemu i zasilają kapitał obrotowy spółki.
-
 
 = Strategia Marketingowa
 
@@ -281,6 +223,128 @@ Nasza strategia opiera się na dostosowaniu czterech fundamentów marketingu do 
 
 - Bezpośrednie pobieranie aplikacji ze sklepów Google Play i App Store
 - Sprzedaż bezpośrednia usług analitycznych dla jednostek samorządu terytorialnego
+
+
+== 1. Kampania B2C
+
+*Zarys koncepcji:* Kampania pod hasłem "Zgłoś to, co Cię blokuje". Wykorzystujemy frustrację użytkowników zablokowanych przez źle zaparkowane hulajnogi czy zepsute windy. Akcja łączy marketing z reklamą w mediach społecznościowych skierowaną do osób z niepełnosprawnościami, seniorów i rodziców z wózkami dziecięcymi.
+
+*Działania operacyjne:*
+- Druk wodoodpornych naklejek z kodem QR prowadzącym do pobrania aplikacji z komunikatem: "Winda znowu nie działa? Zgłoś to w BezBarier!". Naklejki trafią w okolice znanych "wąskich gardeł" w przestrzeni miejskiej.
+- Równoległe uruchomienie lokalnych reklam wideo (Facebook/Instagram) pokazujących dynamikę aplikacji i to, jak łatwo zgłosić tymczasowe bariery na mapie[cite: 1].
+
+#align(center)[
+  #table(
+    columns: (1fr, auto),
+    align: (left, right),
+    [*Pozycja kosztowa*], [*Szacowany Koszt (PLN)*],
+    [Budżet mediowy (Meta Ads - geotargetowanie Trójmiasto)], [3 000 zł],
+    [Projekt i druk naklejek z kodem QR (ok. 1000 sztuk)], [500 zł],
+    [*Suma całkowita B2C*], [*3 500 zł*]
+  )
+]
+
+== 2. Kampania B2G
+
+Głównym wyzwaniem w sektorze B2G jest długi proces decyzyjny urzędów. Docelowa sprzedaż subskrypcji analitycznej w cenie 12 000 zł miesięcznie wymaga zaprezentowania twardych dowodów na opłacalność inwestycji. Kampania opiera się na bezpośrednim, wielopoziomowym dotarciu do decydentów.
+
+*Krok 1: Zbieranie danych*
+Wykorzystanie początkowego ruchu z kampanii B2C do zebrania w krótkim czasie kilkudziesięciu realnych zgłoszeń o mikro-barierach w danym mieście. Stanowi to darmowy audyt przestrzeni miejskiej.
+
+*Krok 2: Fizyczny Raport*
+Z zebranych danych generowany jest dedykowany, drukowany w twardej oprawie "Audyt Dostępności Przestrzeni Miejskiej". Raport wskazuje miastu mapę hotspotów. Udowadnia również, że zakup narzędzia typu "Tech for Good"[cite: 1] ułatwi samorządom aplikowanie o unijne dotacje i pomoże uniknąć konsekwencji prawnych związanych z Europejskim Aktem o Dostępności (EAA)[cite: 1].
+
+*Krok 3: Uderzenie Wieloosobowe*
+Spersonalizowane, eleganckie kopie raportu trafiają przesyłką kurierską bezpośrednio na biurka kluczowych decydentów: Prezydenta Miasta, Dyrektora Zarządu Dróg oraz dyrekcji Powiatowego Centrum Pomocy Rodzinie (PCPR). Działanie to buduje wewnętrzną koalicję poparcia dla innowacji w urzędzie.
+
+*Krok 4: Proof of Concept i domknięcie*
+Zamiast tradycyjnej oferty sprzedażowej, następuje kontakt telefoniczny w celu omówienia wyników raportu. Urząd otrzymuje propozycję bezpłatnego, krótkiego okresu próbnego panelu analitycznego B2G. Namacalne udowodnienie użyteczności systemu znacząco ułatwia podpisanie umowy abonamentowej.
+
+#align(center)[
+  #table(
+    columns: (1fr, auto),
+    align: (left, right),
+    [*Pozycja kosztowa*], [*Szacowany Koszt (PLN)*],
+    [Subskrypcja narzędzi do wyszukiwania kontaktów urzędniczych (np. LinkedIn Sales Navigator)], [400 zł],
+    [Skład graficzny i wydruk premium raportów "Audyt Obywatelski" (ok. 15 egzemplarzy)], [1 200 zł],
+    [Bezpieczna przesyłka kurierska bezpośrednio do urzędów], [300 zł],
+    [Delegacje i spotkania bezpośrednie z przedstawicielami samorządów], [800 zł],
+    [*Suma całkowita B2G (1 miesiąc)*], [*2 700 zł*]
+  )
+]
+
+== 3. Podsumowanie Rewizji Budżetowej
+
+Podsumowując, łączny budżet marketingowy na pierwszy miesiąc operacyjny projektu wynosi *6 700 zł*. Inwestycja ta jest strategicznie rozłożona między kampanię B2C (3 500 zł) a B2G (2 700 zł), a także dodatkowe działania marketingowe, co pozwala na zbudowanie solidnej bazy użytkowników oraz skuteczne dotarcie do kluczowych decydentów w sektorze publicznym.
+
+= Analiza Scenariuszowa i Próg Rentowności (Break-Even Point)
+
+W celu zminimalizowania ryzyka biznesowego projektu aplikacji, analizę progu rentowności (Break-Even Point) oparto na dwóch alternatywnych scenariuszach operacyjnych. Model biznesowy w obu przypadkach zakłada sprzedaż subskrypcji panelu analitycznego dla jednostek samorządu terytorialnego w cenie $S = 12 000 " zł"$ miesięcznie od miasta, przy koszcie zmiennym wdrożenia i obsługi $K_z = 500 " zł"$ od klienta.
+
+Ilościowy próg rentowności wyliczany jest ze wzoru podstawowego:
+#equation_with_description(
+  [$ B E P = frac(K_s, S - K_z) $ <eq:bep>],
+  [$K_s$ – koszty stałe,],
+  [$S$ – cena sprzedaży,],
+  [$K_z$ – koszty zmienne.]
+)
+
+=== Scenariusz A: Rozwój kapitałowy (Z uzyskaniem grantu FERS)
+
+*Opis kosztów:* Zakłada się pozyskanie grantu w wysokości 100 000 zł z programu Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +. Koszty stałe ($K_s$) wynoszą *45 000 zł/miesięc*, na co składają się rynkowe wynagrodzenia trzech członków zespołu (35 000 zł), infrastruktura serwerowa (1 000 zł), marketing (6 700 zł) oraz administracja i księgowość (2 300 zł).
+
+*Matematyczny próg rentowności:*
+
+#equation_simple(
+  [$ B E P_A = frac(45 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 3,91$ <eq:bep_a>]
+)
+
+Firma osiąga rentowność operacyjną przy pozyskaniu i utrzymaniu 4 płatnych klientów instytucjonalnych.
+
+#figure(
+  image("bep_wariant_a.png", width: 100%),
+  caption: [Analiza Progu Rentowności - Wariant A (Z grantem FERS)],
+)
+
+*Ocena strategiczna:*
+- *Plusy (Szanse):* Pozyskanie zewnętrznego finansowania w kwocie 100 000 zł tworzy bezpieczną poduszkę finansową. Środki te w pełni pokrywają koszty operacyjne w pierwszych miesiącach, gdy przychody ze sprzedaży wynoszą jeszcze 0 zł. Pozwala to zespołowi na bezstresowe przejście przez fazę projektowania UI/UX, rozwój MVP oraz testy beta i dopracowanie aplikacji bez presji natychmiastowej komercjalizacji.
+- *Minusy (Ryzyko):* Wyższy próg rentowności na poziomie operacyjnym - wymaga podpisania umów z 4 miastami, aby przychody zaczęły bilansować ponoszone koszty stałe.
+
+=== Scenariusz B: Samofinansowanie (Bootstrap / Lean Startup)
+
+*Opis kosztów:* W przypadku nieuzyskania dofinansowania, projekt przechodzi w tryb maksymalnej oszczędności budżetowej. Założyciele decydują się na odroczenie pobierania wynagrodzeń do momentu osiągnięcia realnych zysków. Koszty stałe ($K_s$) zostają zredukowane do zaledwie *10 000 zł/miesięc* (1 000 zł infrastruktura serwerowa, 6 700 zł marketing oraz 2 300 zł administracja i księgowość).
+
+*Matematyczny próg rentowności:*
+
+#equation_simple(
+  [$ B E P_B = frac(10 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 0,87$ <eq:bep_b>]
+)
+
+Firma osiąga rentowność operacyjną już przy pozyskaniu 1 płatnego klienta instytucjonalnego.
+
+#figure(
+  image("bep_wariant_b.png", width: 100%),
+  caption: [Analiza Progu Rentowności - Wariant B (Bootstrap / Lean Startup)],
+)
+
+*Ocena strategiczna:*
+- *Plusy (Szanse):* Niezwykle niski próg rentowności. Już pierwszy pozyskany klient B2G w pełni pokrywa miesięczne koszty utrzymania infrastruktury i generuje nadwyżkę finansową.
+- *Minusy (Ryzyko):* Krytycznie wysokie ryzyko personalne i operacyjne. Brak poduszki finansowej oznacza, że jeśli zespół nie pozyska klienta w pierwszych tygodniach, projekt zbankrutuje. Konieczność darmowej pracy założycieli może prowadzić do frustracji i wypalenia zespołu.
+
+=== Wnioski
+
+Choć Scenariusz B charakteryzuje się niższym progiem rentowności na papierze, to *Scenariusz A (z grantem FERS) jest wariantem o znacznie niższym realnym ryzyku biznesowym*. Zapewnia on płynność finansową spółki w kluczowej, początkowej fazie rozwoju produktu. Strategią nadrzędną firmy jest aplikowanie o dofinansowanie unijne (Wariant A), natomiast model Bootstrap (Wariant B) stanowi w pełni opracowany plan awaryjny.
+
+== Zarządzanie Przepływami Pieniężnymi (Cash Flow) i Strategia "Smart Burn Rate"
+
+Pozorny paradoks matematyczny projektu polega na tym, że grant z programu FERS wynosi maksymalnie 100 000 zł, podczas gdy pełne rynkowe koszty operacyjne przedsiębiorstwa w fazie wdrożenia wynoszą 45 000 zł miesięcznie, a całkowity czas realizacji to 30 tygodni (ok. 7,5 miesiąca). Przy liniowym, stałym tempie wydatków środki z dotacji skończyłyby się po 2,2 miesiącach. 
+
+Aby wyeliminować ryzyko utraty płynności finansowej, wdrożono strategię elastycznego zarządzania budżetem operacyjnym (*Smart Burn Rate*):
+
+1. *Faza Inicjalna (Tygodnie 1–10 – Szacowany koszt: 5 000 zł/mc):* Etapy analizy rynku, uwarunkowań prawnych oraz projektowania makiet UI/UX realizowane są w realizowane w modelu Lean Startup. Koszty operacyjne ograniczają się do niezbędnej infrastruktury chmurowej, narzędzi projektowych i obsługi prawnej. Praca deweloperska nie jest na tym etapie kontraktowana komercyjnie.
+2. *Faza Intensywnego Rozwoju MVP (Tygodnie 11–22 – Szacowany koszt: 45 000 zł/mc):* W momencie rozpoczęcia zaawansowanych prac programistycznych następuje uruchomienie środków z grantu FERS. Przez okres 12 tygodni (3 miesiące) zespół pracuje w pełnym wymiarze godzin przy rynkowych stawkach wynagrodzeń. Łączny koszt tej kluczowej fazy wynosi $3 times 45 space 000 " zł" = 135 space 000 " zł"$, z czego 100 000 zł pokrywa bezzwrotna dotacja unijna, a pozostała część stanowi minimalny wkład własny założycieli.
+3. *Faza Testów i Przedsprzedaży (Tygodnie 23–30 – Finansowanie Hybrydowe):* Po ukończeniu wersji MVP, w trakcie testów beta w Trójmieście, uruchomiony zostaje program pilotażowy B2G. Przed oficjalną premierą rynkową nawiązywane są pierwsze partnerstwa komercyjne z urzędami miast na zasadzie przedpłaconych subskrypcji wdrożeniowych (Early Access). Przychody z pierwszych umów (12 000 zł/mc od miasta) zaczynają bezpośrednio finansować bieżące utrzymanie systemu i zasilają kapitał obrotowy spółki.
+
 
 #pagebreak()
 
