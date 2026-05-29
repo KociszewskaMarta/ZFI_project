@@ -106,6 +106,5 @@ if __name__ == "__main__":
     plot_gantt()   # Zapisuje 'harmonogram.png'
     
     # Generowanie dwóch niezależnych diagramów analizy progów rentowności
-    generate_bep_plot(ks=45000, title='Analiza Progu Rentowności - Wariant A (Z grantem FERS)', filename='bep_wariant_a.png', max_clients=6)
-    generate_bep_plot(ks=10000, title='Analiza Progu Rentowności - Wariant B (Bootstrap / Lean Startup)', filename='bep_wariant_b.png', max_clients=4)
+    generate_bep_plot(ks=45000, title='Analiza Progu Rentowności', filename='bep.png', max_clients=6)
     print("Wszystkie grafiki i warianty BEP zostały zapisane w katalogu roboczym!")
