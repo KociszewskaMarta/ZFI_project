@@ -293,9 +293,8 @@ Ilościowy próg rentowności wyliczany jest ze wzoru podstawowego:
   [$K_z$ – koszty zmienne.]
 )
 
-=== Scenariusz A: Rozwój kapitałowy (Z uzyskaniem grantu FERS)
-
-*Opis kosztów:* Zakłada się pozyskanie grantu w wysokości 100 000 zł z programu Inkubator Innowacji Społecznych Wielkich Jutra – Dostępność +. Koszty stałe ($K_s$) wynoszą *45 000 zł/miesięc*, na co składają się rynkowe wynagrodzenia trzech członków zespołu (35 000 zł), infrastruktura serwerowa (1 000 zł), marketing (6 700 zł) oraz administracja i księgowość (2 300 zł).
+*Opis kosztów:* 
+Koszty stałe ($K_s$) wynoszą *45 000 zł/miesięc*, na co składają się rynkowe wynagrodzenia trzech członków zespołu (35 000 zł), infrastruktura serwerowa (1 000 zł), marketing (6 700 zł) oraz administracja i księgowość (2 300 zł).
 
 *Matematyczny próg rentowności:*
 
@@ -306,49 +305,13 @@ Ilościowy próg rentowności wyliczany jest ze wzoru podstawowego:
 Firma osiąga rentowność operacyjną przy pozyskaniu i utrzymaniu 4 płatnych klientów instytucjonalnych.
 
 #figure(
-  image("bep_wariant_a.png", width: 100%),
-  caption: [Analiza Progu Rentowności - Wariant A (Z grantem FERS)],
+  image("bep.png", width: 100%),
+  caption: [Analiza Progu Rentowności],
 )
 
 *Ocena strategiczna:*
 - *Plusy (Szanse):* Pozyskanie zewnętrznego finansowania w kwocie 100 000 zł tworzy bezpieczną poduszkę finansową. Środki te w pełni pokrywają koszty operacyjne w pierwszych miesiącach, gdy przychody ze sprzedaży wynoszą jeszcze 0 zł. Pozwala to zespołowi na bezstresowe przejście przez fazę projektowania UI/UX, rozwój MVP oraz testy beta i dopracowanie aplikacji bez presji natychmiastowej komercjalizacji.
 - *Minusy (Ryzyko):* Wyższy próg rentowności na poziomie operacyjnym - wymaga podpisania umów z 4 miastami, aby przychody zaczęły bilansować ponoszone koszty stałe.
-
-=== Scenariusz B: Samofinansowanie (Bootstrap / Lean Startup)
-
-*Opis kosztów:* W przypadku nieuzyskania dofinansowania, projekt przechodzi w tryb maksymalnej oszczędności budżetowej. Założyciele decydują się na odroczenie pobierania wynagrodzeń do momentu osiągnięcia realnych zysków. Koszty stałe ($K_s$) zostają zredukowane do zaledwie *10 000 zł/miesięc* (1 000 zł infrastruktura serwerowa, 6 700 zł marketing oraz 2 300 zł administracja i księgowość).
-
-*Matematyczny próg rentowności:*
-
-#equation_simple(
-  [$ B E P_B = frac(10 space 000 " zł", 12 space 000 " zł" - 500 " zł") approx 0,87$ <eq:bep_b>]
-)
-
-Firma osiąga rentowność operacyjną już przy pozyskaniu 1 płatnego klienta instytucjonalnego.
-
-#figure(
-  image("bep_wariant_b.png", width: 100%),
-  caption: [Analiza Progu Rentowności - Wariant B (Bootstrap / Lean Startup)],
-)
-
-*Ocena strategiczna:*
-- *Plusy (Szanse):* Niezwykle niski próg rentowności. Już pierwszy pozyskany klient B2G w pełni pokrywa miesięczne koszty utrzymania infrastruktury i generuje nadwyżkę finansową.
-- *Minusy (Ryzyko):* Krytycznie wysokie ryzyko personalne i operacyjne. Brak poduszki finansowej oznacza, że jeśli zespół nie pozyska klienta w pierwszych tygodniach, projekt zbankrutuje. Konieczność darmowej pracy założycieli może prowadzić do frustracji i wypalenia zespołu.
-
-=== Wnioski
-
-Choć Scenariusz B charakteryzuje się niższym progiem rentowności na papierze, to *Scenariusz A (z grantem FERS) jest wariantem o znacznie niższym realnym ryzyku biznesowym*. Zapewnia on płynność finansową spółki w kluczowej, początkowej fazie rozwoju produktu. Strategią nadrzędną firmy jest aplikowanie o dofinansowanie unijne (Wariant A), natomiast model Bootstrap (Wariant B) stanowi w pełni opracowany plan awaryjny.
-
-== Zarządzanie Przepływami Pieniężnymi (Cash Flow) i Strategia "Smart Burn Rate"
-
-Pozorny paradoks matematyczny projektu polega na tym, że grant z programu FERS wynosi maksymalnie 100 000 zł, podczas gdy pełne rynkowe koszty operacyjne przedsiębiorstwa w fazie wdrożenia wynoszą 45 000 zł miesięcznie, a całkowity czas realizacji to 30 tygodni (ok. 7,5 miesiąca). Przy liniowym, stałym tempie wydatków środki z dotacji skończyłyby się po 2,2 miesiącach. 
-
-Aby wyeliminować ryzyko utraty płynności finansowej, wdrożono strategię elastycznego zarządzania budżetem operacyjnym (*Smart Burn Rate*):
-
-1. *Faza Inicjalna (Tygodnie 1–10 – Szacowany koszt: 5 000 zł/mc):* Etapy analizy rynku, uwarunkowań prawnych oraz projektowania makiet UI/UX realizowane są w realizowane w modelu Lean Startup. Koszty operacyjne ograniczają się do niezbędnej infrastruktury chmurowej, narzędzi projektowych i obsługi prawnej. Praca deweloperska nie jest na tym etapie kontraktowana komercyjnie.
-2. *Faza Intensywnego Rozwoju MVP (Tygodnie 11–22 – Szacowany koszt: 45 000 zł/mc):* W momencie rozpoczęcia zaawansowanych prac programistycznych następuje uruchomienie środków z grantu FERS. Przez okres 12 tygodni (3 miesiące) zespół pracuje w pełnym wymiarze godzin przy rynkowych stawkach wynagrodzeń. Łączny koszt tej kluczowej fazy wynosi $3 times 45 space 000 " zł" = 135 space 000 " zł"$, z czego 100 000 zł pokrywa bezzwrotna dotacja unijna, a pozostała część stanowi minimalny wkład własny założycieli.
-3. *Faza Testów i Przedsprzedaży (Tygodnie 23–30 – Finansowanie Hybrydowe):* Po ukończeniu wersji MVP, w trakcie testów beta w Trójmieście, uruchomiony zostaje program pilotażowy B2G. Przed oficjalną premierą rynkową nawiązywane są pierwsze partnerstwa komercyjne z urzędami miast na zasadzie przedpłaconych subskrypcji wdrożeniowych (Early Access). Przychody z pierwszych umów (12 000 zł/mc od miasta) zaczynają bezpośrednio finansować bieżące utrzymanie systemu i zasilają kapitał obrotowy spółki.
-
 
 #pagebreak()
 
